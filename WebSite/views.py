@@ -35,7 +35,7 @@ def login(request):
 
         if user:
             django_login(request, user)
-            return redirect('infos')
+            return redirect('kaka')
         else:
             return HttpResponse("EMAIL OU SENHA INVALIDOS")
     else:
