@@ -22,7 +22,7 @@ def cadastro(request):
         user.save()
         return redirect('login')
     else:
-        HttpResponse("DEU MERDA NA VIEW DE CADASTRO")
+        return HttpResponse("DEU MERDA NA VIEW DE CADASTRO")
 
 def login(request):
     if request.method == "GET":
@@ -37,9 +37,9 @@ def login(request):
             django_login(request, user)
             return redirect('/infos')
         else:
-            HttpResponse("EMAIL OU SENHA INVALIDOS")
+            return HttpResponse("EMAIL OU SENHA INVALIDOS")
     else:
-        HttpResponse("DEU MERDA NA VIEW DE LOGIN ")
+        return HttpResponse("DEU MERDA NA VIEW DE LOGIN ")
 
 def infos(request):
     return render(request, 'infos.html')
