@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+<div class="container">
+	<img src="{% static 'img/logomarca.png' %}" alt=""> 
+    <form id="signin" name="cadastro" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="Email" name="email_cadastro" required />
+        <i class="fas fa-envelope iEmail"></i>
+        <input type="password" placeholder="Password" name="password_cadastro1" required />
+        <i class="fas fa-lock iPassword"></i>
+        <input type="password" placeholder="Password" name="password_cadastro2" required />
+        <i class="fas fa-lock iPassword2"></i>
+        <div class="divCheck">
+            <input type="checkbox" />
+            <span style="font-family: 'Josefin Sans', sans-serif;">Terms</span>
+        </div>
+        
+        <p>Já possui uma conta?<a href="./login.html" class="as"> Faça o Login!</a></p>
+        
+        <button type="submit">Sign up</button>
+    </form>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+	<img src="{% static 'img/logomarca.png' %}" alt="">
+	
+    <form id="signin" name="login" method="POST">
+      {% csrf_token %}
+      <input type="text" placeholder="Email" name="email_login" required/>
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Password" name="senha_login" required/>
+      <i class="fas fa-lock iPassword"></i>
+      <div class="divCheck">
+        <input type="checkbox"/>
+        <span style="font-family: 'Josefin Sans', sans-serif;">Remember Password</span>
+      </div>
+	
+      <button class="testecss"><a href="infos.html" class="aoba">Login</a></button></a>
+      
+      <p style="margin-top:8%; margin-left:2%">Não tem uma conta?<a href="./cadastro.html"  class="as"> Crie agora!</a></p>
+      <p style="margin-top:3%; margin-left:2%" >Esqueceu a sua senha?<a href="#"  class="as"> Recupere sua senha</a></p>
+    </form>
+
+</body>
+</html>

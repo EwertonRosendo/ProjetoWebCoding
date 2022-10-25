@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Minhas informações</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="{% static 'css/teste.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i>Blogs</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Ambiente Virtual</a></li>
+            
+        </ul> 
+        <div class="social_media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="main_content" style="text-align:justify ;">
+        <div class="info" id="main_titulo">
+            <br>
+            <h2>Meu Perfil</h2>
+            <p>Confira e mantenha seus dados atualizados</p>
+        </div>
+
+        <div class="image_perfil">
+            <img src="{% static 'img/avatar.png' %}" alt="Perfil" >
+        </div>
+        
+        <div class="info">
+
+    </div>
+    <div class="info" id="container">
+    <p>Informações basicas</p>
+    <br>
+    <table class="dados1">
+        <thead>
+            <td>Nome:</td>
+            <td>Data de Nascimento:</td>
+            <td>CPF:</td>
+            <td>RG:</td>
+            <td>Telefone:</td>
+        </thead>
+        <tr>
+            <td>Ewerton Rosendo da Silva</td>
+            <td>03/10/2003</td>
+            <td>482.365.232-12</td>
+            <td>23942341</td>
+            <td>(81) 9 3278-3212</td>
+        </tr>
+        <thead>
+            <td>Genero:</td>
+            <td>País de Origem:</td>
+            <td>Email:</td>
+        </thead>
+        <tr>
+            <td>Masculino</td>
+            <td>Brazil</td>
+            <td>tres.patetas@gmail.com</td>
+        </tr>
+    </table>
+    <br>
+    <p>Endereço</p>
+    <table class="dados2">
+        <thead>
+            <td>Cep:</td>
+            <td>Bairro:</td>
+            <td>Complemento:</td>
+        </thead>
+        <tr>
+            <td>43832-846</td>
+            <td>Boa Vista</td>
+            <td>Casa</td>
+        </tr>
+        
+        <thead>
+            <td>Endereço:</td>
+            <td>Estado:</td>
+            <td>Cidade:</td>
+        </thead>
+        <tr>
+            <td>Rua das Oliveiras</td>
+            <td>PE</td>
+            <td>Recife</td>
+        </tr>
+
+    </table>
+
+    </div>        
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
