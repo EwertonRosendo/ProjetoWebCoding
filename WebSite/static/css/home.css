@@ -143,9 +143,6 @@ body{
   margin-left: 150%;
   
 }
-table{
-  margin-bottom: 30px;
-}
 
 .linha-sha{
   height: 1px;
@@ -153,6 +150,3 @@ table{
   margin-bottom: 1%;
   background-color: rgb(201, 201, 201);
 }
-
-
-
